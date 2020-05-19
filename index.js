@@ -14,16 +14,16 @@ function nowServing(line) {
 
 function currentLine(line) {
   
-  var line2 = [];
+  var newLine = [];
   
   for (var i = 0; i < line.length; i++) {
-    line2.push(' '+ [i + 1] + `. ` + line[i]);
+    newLine.push(' '+ [i + 1] + `. ` + line[i]);
   }
   
   if (line.length === 0) {
     return ("The line is currently empty.");
   }
   else {
-    return (`The line is currently:` + line2);
+    return (`The line is currently:` + newLine);
     }
 }
