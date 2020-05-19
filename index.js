@@ -17,7 +17,7 @@ function currentLine(line) {
   var newLine = [];
   
   for (var i = 0; i < line.length; i++) {
-    newLine.push(`${[i + 1]}. ${line[i]}`);
+    newLine.push(` ${[i + 1]}. ${line[i]}`);
   }
   
   if (line.length === 0) {
